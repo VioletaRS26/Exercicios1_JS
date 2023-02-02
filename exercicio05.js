@@ -1,9 +1,8 @@
-function ordenar_3_numeros(n1, n2, n3){
-    const array = [n1,n2,n3];
-
-    function decrescente(a,b){
+function ordenar_3_numeros(a, b, c){
+    array = [a, b, c];
+    function ordenar_decrescente(a, b){
         return b - a;
     }
-    console.log(array.sort(decrescente));
+    return (array.sort(ordenar_decrescente));
 }
-ordenar_3_numeros(7,4,8); 
+console.log(ordenar_3_numeros(6,3,8));
